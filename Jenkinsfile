@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     sh "aws eks update-kubeconfig --region ap-south-1 --name assignment-eks"
-                    sh "helm upgrade first --install ./docker-spring-boot/mychart --namespace helm-assignment --set image.tag=$BUILD_NUMBER"
+                    sh "helm upgrade first --install mychart --namespace helm-assignment --set image.tag=$BUILD_NUMBER"
                 }
             }
         }
