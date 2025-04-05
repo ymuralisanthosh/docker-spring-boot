@@ -4,7 +4,7 @@ This source code is an Spring Boot web application).
 ## How to run this?
 ```bash
 $ git clone https://github.com/akannan1087/docker-spring-boot
-$ cd docker-spring-boot
+$ cd docker-spring-boot,,
 $ mvn clean package
 $ java -jar target/spring-boot-web.jar
 
