@@ -44,7 +44,8 @@ pipeline {
             steps {
                 script {
                     sh "aws eks update-kubeconfig --region ap-south-1 --name assignment-eks"
-                    sh "helm upgrade first --install mychart --namespace helm-assignment --set image.tag=$BUILD_NUMBER"
+                    sh "cp -r /home/ubuntu/mychart ./"
+                    sh "helm upgrade first --install ./mychart --namespace helm-assignment --set image.tag=$BUILD_NUMBER"
                 }
             }
         }
