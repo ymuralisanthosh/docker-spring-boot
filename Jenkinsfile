@@ -34,6 +34,12 @@ pipeline {
                 }
             }
         }
+        stage('Debug Path') {
+          steps {
+            sh "pwd && ls -al"
+          }
+        }
+
         stage('Deploy') {
             steps {
                 script {
