@@ -51,7 +51,7 @@
 
     <build>
 
-        <finalName>spring-boot-web</finalName>
+        <finalName>assignment</finalName>
 
         <plugins>
             <plugin>
